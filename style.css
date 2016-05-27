@@ -1,0 +1,77 @@
+body {
+  font-family: Times;
+}
+ul {
+  list-style: none;
+  color: #666666;
+}
+a {
+  text-decoration: none;
+  color: #666666;
+}
+aside {
+  max-width: 230px;
+}
+hr {
+  border: none;
+  height: 1px;
+  color: #666666;
+  background-color: #666666;
+}
+h2 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+.refinements {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+.refinements .facet-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+}
+.refinements .clear-filter {
+  float: right;
+  color: #666666;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+}
+.refinements .scrollableList {
+  list-style: none;
+  height: 133px;
+  width: 100%;
+  overflow-x: scroll;
+  border: 1px solid #bababa;
+  margin: 0px 0px 15px 0px;
+  padding: 0px;
+}
+.refinements .default {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+  padding: 0px;
+}
+.refinements .columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  line-height: 35px;
+}

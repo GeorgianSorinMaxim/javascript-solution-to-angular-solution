@@ -1,0 +1,93 @@
+@black: #000;
+@grey: #666666;
+@light-grey: #bababa;
+
+body {
+  font-family: Times;
+}
+
+ul {
+  list-style: none;
+  color: @grey;
+}
+
+a {
+  text-decoration: none;
+  color: @grey;
+}
+
+aside {
+  max-width: 230px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: @grey;
+    background-color: @grey;
+}
+
+h2 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+h3 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.refinements {
+	margin:0;
+	padding:0;
+	width:100%;
+  display: block;
+
+  .facet-name{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @black;
+    font-size: 14px;
+  }
+
+	.clear-filter {
+    float: right;
+    color: @grey;
+		text-transform: none;
+		font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+	}
+
+  .scrollableList {
+    list-style: none;
+    height: 133px;
+    width: 100%;
+    overflow-x: scroll;
+    border: 1px solid @light-grey;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+  }
+
+  .default {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+  }
+
+  .columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    line-height: 35px;
+  }
+}

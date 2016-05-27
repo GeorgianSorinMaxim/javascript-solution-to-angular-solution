@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Refinements JavaScript test</title>
+        <script src="js/angular.min.js"></script>
+        <script src="js/jquery-1.7.2.js" type="text/javascript"></script>
+
+        <script src="js/refinements.js" type="text/javascript"></script>
+        <script src="js/controller.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body ng-controller="indexController">
+      <aside class="refinements" data-hasanyselected="false">
+          <h2 class="headerLabel">REFINE BY</h2>
+          <a href="#" class="clear-filter" data-clear="all" ng-click="clearAll()">Clear All</a>
+          </br></br>
+          <div class="panel" data-id="{{refinement.dataId}}" data-hasselections="false" ng-repeat="refinement in refinements">
+              <hr>
+              <a href="#" class="refinement-header">
+                  <h3>
+                      <span class="facet-name">{{refinement.name}}</span>
+                  </h3>
+              </a>
+              <a href="#" data-clear="{{refinement.dataId}}" class="clear-filter" ng-click="clear(refinement.dataId)">Clear</a>
+              <div class="options scrollable single-column">
+                  <ul ng-class="{'default': refinement.name === 'Base Color', 'scrollableList': refinement.name === 'Size' || refinement.name === 'Brand' }">
+                      <li ng-repeat="filter in refinement.filters">
+                          <input type="checkbox" id="{{filter.id}}" class="checkbox" ng-model="filter.Selected"/>
+                          <label ng-hide="filter.name" for="{{filter.id}}">{{filter}}</label>
+                          <label ng-hide="!filter.name" for="{{filter.id}}">{{filter.name}}</label>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </aside>
+    </body>
+</html>
